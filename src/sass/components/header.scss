@@ -1,0 +1,111 @@
+.header {
+  padding: 15px 0;
+  background: linear-gradient(
+      0deg,
+      rgba($main-black, 0.9) 0%,
+      rgba($main-black, 0.9) 100%
+    ),
+    url(../../images/header-bg.jpg);
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.burger-menu {
+  width: 32px;
+  height: 32px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 0;
+
+  &__center {
+    width: 70%;
+    height: 4px;
+    background-color: $gold;
+    border-radius: 2px;
+    cursor: pointer;
+
+    &:before,
+    &:after {
+      display: block;
+      content: '';
+      width: 100%;
+      height: 4px;
+      position: absolute;
+      left: 0;
+      border-radius: 2px;
+      background-color: $dark-gold;
+      @include transition;
+      cursor: pointer;
+    }
+
+    &:after {
+      bottom: 5px;
+    }
+
+    &:before {
+      top: 5px;
+    }
+  }
+}
+
+.burger-menu.burger-menu--active .burger-menu__center {
+  width: 0;
+
+  &:before,
+  &:after {
+    top: 45%;
+    left: 0;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+
+  &:after {
+    transform: rotate(45deg);
+  }
+
+  &:before {
+    transform: rotate(-45deg);
+  }
+}
+
+.home1 {
+  animation: homecolor 2.5s infinite ease-in-out;
+}
+
+.home2,
+.letter {
+  animation: homecolor2 2.5s infinite ease-in-out;
+}
+
+@keyframes homecolor {
+  0% {
+    fill: $dark-gold;
+  }
+
+  50% {
+    fill: $gold;
+  }
+
+  100% {
+    fill: $dark-gold;
+  }
+}
+
+@keyframes homecolor2 {
+  0% {
+    fill: $gold;
+  }
+
+  50% {
+    fill: $dark-gold;
+  }
+
+  100% {
+    fill: $gold;
+  }
+}

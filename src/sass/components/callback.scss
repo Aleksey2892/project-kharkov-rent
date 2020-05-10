@@ -1,0 +1,25 @@
+.callback {
+  padding: 80px 0 15px;
+  background-image: url(../../images/h1-bg.jpg);
+  min-height: 410px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.callback__inner {
+  padding: 15px 0;
+  background: $half-white;
+}
+
+.callback__title {
+  font-weight: $text-bold;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.callback__btn {
+  margin-top: 100px;
+  width: 100%;
+  min-height: 56px;
+}
