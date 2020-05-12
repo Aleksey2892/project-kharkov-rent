@@ -26,3 +26,13 @@
     width: 450px;
   }
 }
+
+.block-title__heading {
+  font-size: 18px;
+  font-weight: $text-bold;
+  text-transform: uppercase;
+}
+
+.block-title__text {
+  font-size: 14px;
+}
