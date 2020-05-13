@@ -1,30 +1,30 @@
 .info {
   padding: 25px 0;
+  position: relative;
 }
 
 .block-title-wrapper {
-  padding: 20px 0;
   background-color: $gold;
-  width: 250px;
   border-bottom-right-radius: 30px;
   border-top-right-radius: 30px;
-  position: relative;
-  @media (min-width: 480px) {
-    width: 400px;
-  }
+  position: absolute;
+  // @media (min-width: 480px) {
+  //   width: 400px;
+  // }
 }
 
 .block-title {
-  width: 290px;
+  margin: 0 auto;
+  width: 100%;
   padding: 10px;
+  top: 25px;
   background-color: $main-white;
   text-align: center;
   border-radius: 22px;
   position: relative;
-  left: 15px;
-  @media (min-width: 480px) {
-    width: 450px;
-  }
+  // @media (min-width: 480px) {
+  //   width: 450px;
+  // }
 }
 
 .block-title__heading {
