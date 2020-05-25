@@ -36,3 +36,52 @@
 .block-title__text {
   font-size: 14px;
 }
+
+.info__filter {
+  margin: 75px 0 25px;
+  min-width: 260px;
+  height: 68px;
+  border-radius: 20px;
+  background-color: $gold;
+  text-align: center;
+}
+
+.card {
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  min-height: 350px;
+  border: 5px solid $gold;
+  border-radius: 20px;
+  background-color: $gold;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__img {
+    margin-bottom: 10px;
+    border-radius: 20px;
+  }
+
+  &__adress {
+    margin: 0;
+    color: $main-white;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  &__link {
+    @include transition;
+    padding: 5px;
+    margin: 20px auto 0;
+    width: 200px;
+    text-align: center;
+    text-transform: uppercase;
+    border: $main-white 1px solid;
+    border-radius: 5px;
+
+    &:hover {
+      border: $main-black 1px solid;
+    }
+  }
+}

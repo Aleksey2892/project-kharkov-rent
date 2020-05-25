@@ -6,12 +6,20 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   font-family: $main-font;
   background-color: $main-black;
   color: $main-black;
+}
+
+img {
+  display: block;
+  min-width: 100%;
+  height: auto;
 }
 
 .all-btn {
@@ -21,6 +29,20 @@ body {
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 400;
+}
+
+.link {
+  text-decoration: none;
+  color: $main-white;
+
+  &:hover {
+    text-decoration: none;
+    color: $main-black;
+  }
+}
+
+.list {
+  list-style-type: none;
 }
 
 @media (min-width: 480px) {
