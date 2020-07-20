@@ -6,9 +6,20 @@
       rgba($main-black, 0.9) 0%,
       rgba($main-black, 0.9) 100%
     ),
-    url(../../images/header-bg.jpg);
+    url(../images/header-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-width: 768px) {
+    background: linear-gradient(
+        0deg,
+        rgba($main-black, 0.9) 0%,
+        rgba($main-black, 0.9) 100%
+      ),
+      url(../images/header-bg-tablet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .header-top {

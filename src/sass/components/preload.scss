@@ -1,0 +1,28 @@
+.preload {
+  opacity: 1;
+  width: 100vw;
+  height: 100vh;
+  background-color: $main-black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 500;
+  pointer-events: none;
+  transition: opacity 1000ms linear;
+
+  & .site-logo {
+    transform: scale(3);
+  }
+}
+
+.load {
+  opacity: 0;
+  pointer-events: initial;
+}
+
+.preload-off {
+  display: none;
+}
